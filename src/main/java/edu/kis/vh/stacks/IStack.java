@@ -2,7 +2,7 @@ package edu.kis.vh.stacks;
 
 public interface IStack {
 
-	public int STACK_EMPTY = -1;
+	public int STACK_EMPTY = 0;
 
 	void push(int i);
 
