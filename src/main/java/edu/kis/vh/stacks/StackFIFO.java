@@ -1,8 +1,10 @@
 package edu.kis.vh.stacks;
 
+import edu.kis.vh.stacks.collections.StackList;
+
 public class StackFIFO extends stack {
 
-	public stack temp = new stack();
+	public IStack temp = new StackList();
 	
 	public StackFIFO() {
 		super();
@@ -26,4 +28,5 @@ public class StackFIFO extends stack {
 		
 		return ret;
 	}
+	//FIFO to jest kolejka, czyli lepiej wykorzystać stackList
 }
