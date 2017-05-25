@@ -27,13 +27,13 @@ public class StackList implements IStack {
 
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return IStack.STACK_EMPTY;
 		return last.value;
 	}
 
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return IStack.STACK_EMPTY;
 		int ret = last.value;
 		last = last.prev;
 		return ret;

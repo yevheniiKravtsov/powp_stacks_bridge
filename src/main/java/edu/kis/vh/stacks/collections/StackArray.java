@@ -5,7 +5,7 @@ import edu.kis.vh.stacks.IStack;
 public class StackArray implements IStack {
 	private int[] ITEMS = new int[12];	
 
-	public int total = -1;
+	public int total = IStack.STACK_EMPTY;
 	
 	/* (non-Javadoc)
 	 * @see edu.kis.vh.stacks.IStack#push(int)
@@ -21,7 +21,7 @@ public class StackArray implements IStack {
 	 */
 	@Override
 	public boolean isEmpty() {
-		return total == -1;
+		return total == IStack.STACK_EMPTY;
 	}
 	
 	/* (non-Javadoc)
@@ -38,7 +38,7 @@ public class StackArray implements IStack {
 	@Override
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return IStack.STACK_EMPTY;
 		return ITEMS[total];
 	}
 				
@@ -48,7 +48,7 @@ public class StackArray implements IStack {
 	@Override
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return IStack.STACK_EMPTY;
 		return ITEMS[total--];
 	}
 }
