@@ -4,6 +4,14 @@ public class StackFIFO extends stack {
 
 	public stack temp = new stack();
 	
+	public StackFIFO() {
+		super();
+	}
+
+	public StackFIFO(IStack stack) {
+		super(stack);
+	}
+
 	@Override
 	public int pop() {
 		while (!isEmpty())
