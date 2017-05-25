@@ -36,6 +36,6 @@ public class stack {
 		return stack.pop();
 	}
 	
-	
+	//Uzyqajac interfejsu mozemy korzystac zamiennie z klas StackArray i StackList
 	
 }
