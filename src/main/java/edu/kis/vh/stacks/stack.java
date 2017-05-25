@@ -38,4 +38,6 @@ public class stack {
 	
 	//Uzyqajac interfejsu mozemy korzystac zamiennie z klas StackArray i StackList
 	
+	//F3 wskazuje nam na deklaracje metode w interfejsie. Ctrl+przycisk tez wskazuje nam na implementacje metode
+	
 }
